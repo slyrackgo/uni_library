@@ -1,7 +1,11 @@
 package com.example.uni_library.Product.Model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.PositiveOrZero;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
+import lombok.NonNull;
 
 @Entity //maps java class to mysql
 @Data
@@ -12,12 +16,16 @@ public class Product {
     @Column(name = "id")
     private Integer id;
 
+    @NotNull(message = "Name Is Required")
     @Column(name = "name")
     private String name;
 
+
+    @Size(min = 20, message = "Description Must Be At Least 20 Characters!")
     @Column(name = "description")
     private String description;
 
+    @PositiveOrZero(message = "Price Can Not Be Negative")
     @Column(name = "price")
     private Integer price;
 
@@ -43,5 +51,9 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getPrice() {
+        return price;
     }
 }

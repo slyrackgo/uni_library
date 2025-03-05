@@ -5,6 +5,7 @@ import com.example.uni_library.Exceptions.ProductNotFoundException;
 import com.example.uni_library.Product.Model.Product;
 import com.example.uni_library.Product.Model.ProductDTO;
 import com.example.uni_library.Product.Model.UpdateProductCommand;
+import com.example.uni_library.Product.Validators.ProductValidator;
 import com.example.uni_library.ProductRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +27,7 @@ public class UpdateProductService implements Command<UpdateProductCommand, Produ
         if(productOptional.isPresent()){
             Product product = command.getProduct();
             product.setId(command.getId());
+//            ProductValidator.execute(product);
             productRepository.save(product);
             return ResponseEntity.ok(new ProductDTO(product));
         }
