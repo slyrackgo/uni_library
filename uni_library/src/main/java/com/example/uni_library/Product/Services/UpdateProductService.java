@@ -1,6 +1,7 @@
 package com.example.uni_library.Product.Services;
 
 import com.example.uni_library.Command;
+import com.example.uni_library.Exceptions.ProductNotFoundException;
 import com.example.uni_library.Product.Model.Product;
 import com.example.uni_library.Product.Model.ProductDTO;
 import com.example.uni_library.Product.Model.UpdateProductCommand;
@@ -28,6 +29,6 @@ public class UpdateProductService implements Command<UpdateProductCommand, Produ
             productRepository.save(product);
             return ResponseEntity.ok(new ProductDTO(product));
         }
-        return  null;
+        throw  new ProductNotFoundException();
     }
 }

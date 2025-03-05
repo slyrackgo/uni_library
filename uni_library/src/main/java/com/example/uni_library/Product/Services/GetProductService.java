@@ -1,5 +1,6 @@
 package com.example.uni_library.Product.Services;
 
+import com.example.uni_library.Exceptions.ProductNotFoundException;
 import com.example.uni_library.Product.Model.Product;
 import com.example.uni_library.Product.Model.ProductDTO;
 import com.example.uni_library.ProductRepository;
@@ -23,6 +24,6 @@ public class GetProductService implements Query<Integer, ProductDTO> {
         if(productOptional.isPresent()){
             return ResponseEntity.ok(new ProductDTO(productOptional.get()));
         }
-        return null;
+        throw  new ProductNotFoundException();
     }
 }

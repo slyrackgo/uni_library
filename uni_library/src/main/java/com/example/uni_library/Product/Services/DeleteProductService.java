@@ -1,6 +1,7 @@
 package com.example.uni_library.Product.Services;
 
 import com.example.uni_library.Command;
+import com.example.uni_library.Exceptions.ProductNotFoundException;
 import com.example.uni_library.Product.Model.Product;
 import com.example.uni_library.ProductRepository;
 import org.springframework.http.HttpStatus;
@@ -24,6 +25,6 @@ public class DeleteProductService implements Command<Integer, Void> {
             productRepository.deleteById(id);
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         }
-        return null;
+        throw  new ProductNotFoundException();
     }
 }
