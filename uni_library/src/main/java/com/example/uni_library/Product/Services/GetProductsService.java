@@ -1,6 +1,7 @@
 package com.example.uni_library.Product.Services;
 
 import com.example.uni_library.Product.Model.Product;
+import com.example.uni_library.Product.Model.ProductDTO;
 import com.example.uni_library.ProductRepository;
 import com.example.uni_library.Query;
 
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class GetProductsService implements Query<Void, List<Product>> {
+public class GetProductsService implements Query<Void, List<ProductDTO>> {
     private final ProductRepository productRepository;
 
     public GetProductsService(ProductRepository productRepository) {
@@ -20,8 +21,9 @@ public class GetProductsService implements Query<Void, List<Product>> {
 
 
     @Override
-    public ResponseEntity<List<Product>> execute(Void input) {
+    public ResponseEntity<List<ProductDTO>> execute(Void input) {
         List<Product> products = productRepository.findAll();
-        return ResponseEntity.status(HttpStatus.OK).body(products);
+        List<ProductDTO> productDTOs = products.stream().map(ProductDTO::new).toList();
+        return ResponseEntity.status(HttpStatus.OK).body(productDTOs);
     }
 }

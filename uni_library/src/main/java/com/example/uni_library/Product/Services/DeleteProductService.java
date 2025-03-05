@@ -1,16 +1,29 @@
 package com.example.uni_library.Product.Services;
 
 import com.example.uni_library.Command;
+import com.example.uni_library.Product.Model.Product;
+import com.example.uni_library.ProductRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-@Service
-public class DeleteProductService implements Command<Void, String> {
+import java.util.Optional;
 
+@Service
+public class DeleteProductService implements Command<Integer, Void> {
+    private ProductRepository productRepository;
+
+    public DeleteProductService(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
 
     @Override
-    public ResponseEntity<String> execute(Void input) {
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body("Product deleted!");
+    public ResponseEntity<Void> execute(Integer id) {
+        Optional<Product> productOptional = productRepository.findById(id);
+        if(productOptional.isPresent()){
+            productRepository.deleteById(id);
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        }
+        return null;
     }
 }
