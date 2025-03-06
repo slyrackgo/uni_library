@@ -2,10 +2,8 @@ package com.example.uni_library.Product.Model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
-import lombok.NonNull;
 
 @Entity //maps java class to mysql
 @Data
@@ -25,9 +23,8 @@ public class Product {
     @Column(name = "description")
     private String description;
 
-    @PositiveOrZero(message = "Price Can Not Be Negative")
     @Column(name = "price")
-    private Integer price;
+    private Double price;
 
     public Integer getId() {
         return id;
@@ -53,7 +50,11 @@ public class Product {
         this.description = description;
     }
 
-    public Integer getPrice() {
+    public Double getPrice() {
         return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 }
