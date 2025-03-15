@@ -12,4 +12,5 @@ The system is fully functional through API endpoints that can be tested and inte
 * Role-Based Access Control (RBAC): Different users (students & admins) are assigned roles with specific permissions, ensuring restricted access to sensitive operations.
 
 
-![postman](https://github.com/user-attachments/assets/f4c550a8-30a2-4cb6-96fb-1b98c33a110b)
+![postman](https://github.com/user-attachments/assets/3a8d87c1-7051-4276-966b-ddb3e08bf742)
+
