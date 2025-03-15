@@ -19,3 +19,8 @@ The system is fully functional through API endpoints that can be tested and inte
     * Send a `GET` request.
 ![postman](https://github.com/user-attachments/assets/3a8d87c1-7051-4276-966b-ddb3e08bf742)
 
+## Technologies
+
+* Spring Boot
+* Java
+* MySQL
