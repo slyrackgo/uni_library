@@ -11,4 +11,5 @@ The system is fully functional through API endpoints that can be tested and inte
 * Token-Based Authentication: The system likely uses JWT (JSON Web Tokens) and session-based authentication to verify user identities securely.
 * Role-Based Access Control (RBAC): Different users (students & admins) are assigned roles with specific permissions, ensuring restricted access to sensitive operations.
 
-(https://github.com/user-attachments/assets/f4c550a8-30a2-4cb6-96fb-1b98c33a110b)
+
+![postman](https://github.com/user-attachments/assets/f4c550a8-30a2-4cb6-96fb-1b98c33a110b)
