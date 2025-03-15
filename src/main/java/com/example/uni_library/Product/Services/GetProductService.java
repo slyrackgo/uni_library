@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Optional;
 
@@ -24,12 +25,17 @@ public class GetProductService implements Query<Integer, ProductDTO> {
 
     @Override
     @Cacheable("productCache")
-    public ResponseEntity<ProductDTO> execute(Integer input) {
+    public ResponseEntity<ProductDTO> execute(Integer input ) {
         logger.info("Executing" + getClass() + " input: " + input);
         Optional<Product> productOptional =  productRepository.findById(input);
         if(productOptional.isPresent()){
             return ResponseEntity.ok(new ProductDTO(productOptional.get()));
         }
         throw  new ProductNotFoundException();
+    }
+
+
+    public Product getProduct(Integer productId) {
+        return productRepository.findById(productId).orElseThrow(ProductNotFoundException::new);
     }
 }

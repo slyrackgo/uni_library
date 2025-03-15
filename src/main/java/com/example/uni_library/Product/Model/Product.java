@@ -25,6 +25,7 @@ public class Product {
 
     @Column(name = "price")
     private Double price;
+    private String attachmentId;
 
     public Integer getId() {
         return id;

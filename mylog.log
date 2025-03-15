@@ -1,20 +1,15 @@
-2025-03-08T00:22:53.536+01:00  INFO 5156 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : Starting UniLibraryApplication using Java 23.0.2 with PID 5156 (C:\Users\Atai\Documents\uni_library\uni_library\target\classes started by Atai in C:\Users\Atai\Documents\uni_library\uni_library)
-2025-03-08T00:22:53.539+01:00  INFO 5156 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-03-08T00:22:54.352+01:00  INFO 5156 --- [uni_library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-08T00:22:54.418+01:00  INFO 5156 --- [uni_library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
-2025-03-08T00:22:55.041+01:00  INFO 5156 --- [uni_library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-08T00:22:55.059+01:00  INFO 5156 --- [uni_library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-08T00:22:55.060+01:00  INFO 5156 --- [uni_library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-08T00:22:55.123+01:00  INFO 5156 --- [uni_library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-08T00:22:55.123+01:00  INFO 5156 --- [uni_library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1513 ms
-2025-03-08T00:22:55.278+01:00  INFO 5156 --- [uni_library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-08T00:22:55.654+01:00  INFO 5156 --- [uni_library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2dff7085
-2025-03-08T00:22:55.657+01:00  INFO 5156 --- [uni_library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-08T00:22:55.744+01:00  INFO 5156 --- [uni_library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-08T00:22:55.799+01:00  INFO 5156 --- [uni_library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-03-08T00:22:55.837+01:00  INFO 5156 --- [uni_library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-08T00:22:56.158+01:00  INFO 5156 --- [uni_library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-08T00:22:56.260+01:00  INFO 5156 --- [uni_library] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-03-11T05:49:01.042+01:00  INFO 3028 --- [uni_library] [main] c.e.u.UniLibraryApplicationTests         : Starting UniLibraryApplicationTests using Java 23.0.2 with PID 3028 (started by Atai in C:\Users\Atai\Downloads\uni_library\uni_library-master\uni_library)
+2025-03-11T05:49:01.049+01:00  INFO 3028 --- [uni_library] [main] c.e.u.UniLibraryApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T05:49:02.451+01:00  INFO 3028 --- [uni_library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T05:49:02.548+01:00  INFO 3028 --- [uni_library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 3 JPA repository interfaces.
+2025-03-11T05:49:03.690+01:00  INFO 3028 --- [uni_library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T05:49:04.230+01:00  INFO 3028 --- [uni_library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@736f8837
+2025-03-11T05:49:04.233+01:00  INFO 3028 --- [uni_library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T05:49:04.322+01:00  INFO 3028 --- [uni_library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T05:49:04.438+01:00  INFO 3028 --- [uni_library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T05:49:04.498+01:00  INFO 3028 --- [uni_library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T05:49:04.698+01:00  INFO 3028 --- [uni_library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T05:49:04.845+01:00  INFO 3028 --- [uni_library] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 9.2
@@ -22,90 +17,13 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-03-08T00:22:57.137+01:00  INFO 5156 --- [uni_library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-08T00:22:57.140+01:00  INFO 5156 --- [uni_library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-08T00:22:57.493+01:00  INFO 5156 --- [uni_library] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-03-08T00:22:58.065+01:00  WARN 5156 --- [uni_library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-08T00:22:58.449+01:00  INFO 5156 --- [uni_library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-03-08T00:22:58.459+01:00  INFO 5156 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : Started UniLibraryApplication in 5.505 seconds (process running for 5.975)
-2025-03-08T00:23:08.080+01:00  INFO 5156 --- [uni_library] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-08T00:23:08.080+01:00  INFO 5156 --- [uni_library] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-08T00:23:08.082+01:00  INFO 5156 --- [uni_library] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-08T00:23:08.133+01:00  INFO 5156 --- [uni_library] [http-nio-8080-exec-2] c.e.u.P.Services.GetProductService       : Executingclass com.example.uni_library.Product.Services.GetProductService input: 3
-2025-03-08T00:25:11.257+01:00  INFO 5156 --- [uni_library] [http-nio-8080-exec-2] c.e.u.P.Services.GetProductService       : Executingclass com.example.uni_library.Product.Services.GetProductService input: 2
-2025-03-08T01:33:38.086+01:00  WARN 5156 --- [uni_library] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m43s300ms277µs300ns).
-2025-03-08T02:28:55.196+01:00  WARN 5156 --- [uni_library] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=37m46s828ms741µs500ns).
-2025-03-08T03:54:14.925+01:00  WARN 5156 --- [uni_library] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m18s368ms886µs).
-2025-03-08T04:28:14.415+01:00  INFO 5156 --- [uni_library] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-08T04:28:14.440+01:00  INFO 5156 --- [uni_library] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-08T04:28:14.459+01:00  INFO 5156 --- [uni_library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-08T04:28:14.481+01:00  INFO 5156 --- [uni_library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-08T04:28:14.490+01:00  INFO 5156 --- [uni_library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-03-08T22:59:14.960+01:00  INFO 2560 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : Starting UniLibraryApplication using Java 23.0.2 with PID 2560 (C:\Users\Atai\Documents\uni_library\uni_library\target\classes started by Atai in C:\Users\Atai\Documents\uni_library\uni_library)
-2025-03-08T22:59:14.963+01:00  INFO 2560 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-03-08T22:59:16.058+01:00  INFO 2560 --- [uni_library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-08T22:59:16.136+01:00  INFO 2560 --- [uni_library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces.
-2025-03-08T22:59:16.885+01:00  INFO 2560 --- [uni_library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-08T22:59:16.900+01:00  INFO 2560 --- [uni_library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-08T22:59:16.900+01:00  INFO 2560 --- [uni_library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-08T22:59:16.963+01:00  INFO 2560 --- [uni_library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-08T22:59:16.963+01:00  INFO 2560 --- [uni_library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1930 ms
-2025-03-08T22:59:17.125+01:00  INFO 2560 --- [uni_library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-08T22:59:17.673+01:00  INFO 2560 --- [uni_library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7971c2a9
-2025-03-08T22:59:17.676+01:00  INFO 2560 --- [uni_library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-08T22:59:17.759+01:00  INFO 2560 --- [uni_library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-08T22:59:17.842+01:00  INFO 2560 --- [uni_library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-03-08T22:59:17.891+01:00  INFO 2560 --- [uni_library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-08T22:59:18.243+01:00  INFO 2560 --- [uni_library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-08T22:59:18.368+01:00  INFO 2560 --- [uni_library] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 9.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-03-08T22:59:19.360+01:00  INFO 2560 --- [uni_library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-08T22:59:19.363+01:00  INFO 2560 --- [uni_library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-08T22:59:19.813+01:00  INFO 2560 --- [uni_library] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-03-08T22:59:20.440+01:00  WARN 2560 --- [uni_library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-08T22:59:20.895+01:00  INFO 2560 --- [uni_library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-03-08T22:59:20.907+01:00  INFO 2560 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : Started UniLibraryApplication in 6.618 seconds (process running for 7.172)
-2025-03-08T23:00:39.510+01:00  INFO 2560 --- [uni_library] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-08T23:00:39.511+01:00  INFO 2560 --- [uni_library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-08T23:00:39.512+01:00  INFO 2560 --- [uni_library] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-03-08T23:10:29.787+01:00  INFO 2560 --- [uni_library] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-08T23:10:29.803+01:00  INFO 2560 --- [uni_library] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-08T23:10:29.807+01:00  INFO 2560 --- [uni_library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-03-08T23:10:29.810+01:00  INFO 2560 --- [uni_library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-03-08T23:10:29.823+01:00  INFO 2560 --- [uni_library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-03-08T23:14:48.657+01:00  INFO 17924 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : Starting UniLibraryApplication using Java 23.0.2 with PID 17924 (C:\Users\Atai\Documents\uni_library\uni_library\target\classes started by Atai in C:\Users\Atai\Documents\uni_library\uni_library)
-2025-03-08T23:14:48.659+01:00  INFO 17924 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-03-08T23:14:49.499+01:00  INFO 17924 --- [uni_library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-03-08T23:14:49.574+01:00  INFO 17924 --- [uni_library] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
-2025-03-08T23:14:50.245+01:00  INFO 17924 --- [uni_library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-03-08T23:14:50.260+01:00  INFO 17924 --- [uni_library] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-08T23:14:50.260+01:00  INFO 17924 --- [uni_library] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-08T23:14:50.322+01:00  INFO 17924 --- [uni_library] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-08T23:14:50.322+01:00  INFO 17924 --- [uni_library] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1597 ms
-2025-03-08T23:14:50.470+01:00  INFO 17924 --- [uni_library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-03-08T23:14:50.862+01:00  INFO 17924 --- [uni_library] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31aab981
-2025-03-08T23:14:50.865+01:00  INFO 17924 --- [uni_library] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-03-08T23:14:50.933+01:00  INFO 17924 --- [uni_library] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-03-08T23:14:50.998+01:00  INFO 17924 --- [uni_library] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-03-08T23:14:51.035+01:00  INFO 17924 --- [uni_library] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-03-08T23:14:51.361+01:00  INFO 17924 --- [uni_library] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-03-08T23:14:51.453+01:00  INFO 17924 --- [uni_library] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 9.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-03-08T23:14:52.281+01:00  INFO 17924 --- [uni_library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-03-08T23:14:52.284+01:00  INFO 17924 --- [uni_library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-03-08T23:14:52.647+01:00  INFO 17924 --- [uni_library] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-03-08T23:14:53.340+01:00  WARN 17924 --- [uni_library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-03-08T23:14:53.796+01:00  INFO 17924 --- [uni_library] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-03-08T23:14:53.808+01:00  INFO 17924 --- [uni_library] [main] c.e.uni_library.UniLibraryApplication    : Started UniLibraryApplication in 5.697 seconds (process running for 6.144)
+2025-03-11T05:49:06.091+01:00  INFO 3028 --- [uni_library] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T05:49:06.095+01:00  INFO 3028 --- [uni_library] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T05:49:06.606+01:00  INFO 3028 --- [uni_library] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-11T05:49:07.353+01:00  WARN 3028 --- [uni_library] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T05:49:07.429+01:00  INFO 3028 --- [uni_library] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-03-11T05:49:08.312+01:00  INFO 3028 --- [uni_library] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoints beneath base path '/actuator'
+2025-03-11T05:49:09.215+01:00  INFO 3028 --- [uni_library] [main] c.e.u.UniLibraryApplicationTests         : Started UniLibraryApplicationTests in 8.516 seconds (process running for 11.525)
+2025-03-11T05:49:09.418+01:00  INFO 3028 --- [uni_library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T05:49:09.420+01:00  INFO 3028 --- [uni_library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T05:49:09.430+01:00  INFO 3028 --- [uni_library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
