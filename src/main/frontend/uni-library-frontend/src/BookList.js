@@ -6,7 +6,7 @@ const ListContainer = styled.div`
 `;
 
 const SearchInput = styled.input`
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 10px;
@@ -26,7 +26,7 @@ const BookListUL = styled.ul`
 `;
 
 const BookItem = styled.li`
-  padding: 12px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #eee;
 
   button {
@@ -70,7 +70,7 @@ function BookList({ onBookClick }) {
   const [books, setBooks] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const booksPerPage = 3;
+  const booksPerPage = 5;
 
   useEffect(() => {
     fetch('/products')
@@ -95,10 +95,11 @@ function BookList({ onBookClick }) {
   };
 
   const handleBookClick = (bookId) => {
+    const book = filteredBooks.find((book) => book.id === bookId);
+    onBookClick(bookId, book);
     const bookIndex = filteredBooks.findIndex((book) => book.id === bookId);
     const pageNumber = Math.ceil((bookIndex + 1) / booksPerPage);
     setCurrentPage(pageNumber);
-    onBookClick(bookId);
   };
 
   const indexOfLastBook = currentPage * booksPerPage;
@@ -140,7 +141,7 @@ function BookList({ onBookClick }) {
               style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
               onClick={() => handleBookClick(book.id)}
             >
-              {book.id}. {book.name} {/* Display book ID */}
+              {book.id}. {book.name}
             </button>
           </BookItem>
         ))}
