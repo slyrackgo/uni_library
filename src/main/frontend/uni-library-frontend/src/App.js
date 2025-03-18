@@ -35,20 +35,21 @@ const MainContent = styled.div`
 `;
 
 const LeftSection = styled.div`
-  width: 50%;
+  width: 40%;
   box-sizing: border-box;
 `;
 
 const RightSection = styled.div`
-  width: 50%;
+  width: 60%;
   box-sizing: border-box;
+  display: flex;
 `;
 
 const BookDetails = styled.div`
   display: flex;
   align-items: flex-start;
   margin-top: 20px;
-  width: 100%;
+  width: 70%;
   box-sizing: border-box;
 `;
 
@@ -60,6 +61,11 @@ const BookImage = styled.img`
 
 const BookInfo = styled.div`
   flex-grow: 1;
+`;
+
+const DownloadSection = styled.div`
+  width: 30%;
+  box-sizing: border-box;
 `;
 
 function App() {
@@ -77,23 +83,29 @@ function App() {
       <Header>
         <Title>Uni Library</Title>
         {selectedBook && (
-          <BookDetails>
-            <BookImage src={selectedBook.imageUrl} alt={selectedBook.name} />
-            <BookInfo>
-              <h3>{selectedBook.name}</h3>
-              <p>{selectedBook.description}</p>
-            </BookInfo>
-          </BookDetails>
+          <RightSection>
+            <BookDetails>
+              <BookImage src={selectedBook.imageUrl} alt={selectedBook.name} />
+              <BookInfo>
+                <h3>{selectedBook.name}</h3>
+                <p>{selectedBook.description}</p>
+              </BookInfo>
+            </BookDetails>
+            <DownloadSection>
+              <BookDownload selectedBookId={selectedBookId} />
+            </DownloadSection>
+          </RightSection>
         )}
       </Header>
       <MainContent>
         <LeftSection>
           <BookList onBookClick={handleBookClick} />
         </LeftSection>
-        <RightSection>
+        {!selectedBook && (
+          <RightSection>
 
-          <BookDownload selectedBookId={selectedBookId} />
-        </RightSection>
+          </RightSection>
+        )}
       </MainContent>
     </AppContainer>
   );
