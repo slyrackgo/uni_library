@@ -11521,3 +11521,10 @@ Unconditional classes:
 2025-03-18T07:43:42.745+01:00 DEBUG 144 --- [uni_library] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/xml;charset=UTF-8, text/xml;charset=UTF-8, application/*+xml;charset=UTF-8]
 2025-03-18T07:43:42.745+01:00 DEBUG 144 --- [uni_library] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ProductDTO(id=1, name=Crime and punishment, description=Raskolnikov, an impoverished student, commi (truncated)...]
 2025-03-18T07:43:42.746+01:00 DEBUG 144 --- [uni_library] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-18T08:00:44.598+01:00 DEBUG 144 --- [uni_library] [SpringApplicationShutdownHook] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-03-18T08:00:44.599+01:00 DEBUG 144 --- [uni_library] [SpringApplicationShutdownHook] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5ef5c734, started on Tue Mar 18 07:23:21 CET 2025
+2025-03-18T08:00:44.602+01:00  INFO 144 --- [uni_library] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-18T08:00:44.617+01:00  INFO 144 --- [uni_library] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-18T08:00:44.624+01:00  INFO 144 --- [uni_library] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-18T08:00:44.627+01:00  INFO 144 --- [uni_library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-18T08:00:44.632+01:00  INFO 144 --- [uni_library] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
