@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BookDownload from './BookDownload';
 import BookList from './BookList';
 import styled from 'styled-components';
@@ -15,11 +15,17 @@ const Title = styled.h1`
 `;
 
 function App() {
+  const [selectedBookId, setSelectedBookId] = useState('');
+
+  const handleBookClick = (bookId) => {
+    setSelectedBookId(bookId);
+  };
+
   return (
     <AppContainer>
       <Title>Uni Library</Title>
-      <BookDownload />
-      <BookList />
+      <BookDownload selectedBookId={selectedBookId} />
+      <BookList onBookClick={handleBookClick} />
     </AppContainer>
   );
 }

@@ -2,16 +2,22 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const ListContainer = styled.div`
-  margin-top: 20px;
+  margin-top: 30px;
 `;
 
 const SearchInput = styled.input`
-  padding: 8px;
-  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
   border-radius: 4px;
+  padding: 10px;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: #3498db;
+    outline: none;
+  }
 `;
 
 const BookListUL = styled.ul`
@@ -20,27 +26,51 @@ const BookListUL = styled.ul`
 `;
 
 const BookItem = styled.li`
-  padding: 8px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #eee;
+
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1em;
+    color: #3498db;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const PaginationContainer = styled.div`
-  margin-top: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 `;
 
 const PaginationButton = styled.button`
-  padding: 5px 10px;
-  margin-right: 5px;
-  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
   border-radius: 4px;
-  cursor: pointer;
+  background-color: #fff;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.active {
+    background-color: #3498db;
+    color: white;
+  }
 `;
 
-function BookList() {
+function BookList({ onBookClick }) {
   const [books, setBooks] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const booksPerPage = 5;
+  const booksPerPage = 3;
 
   useEffect(() => {
     fetch('/products')
@@ -58,14 +88,40 @@ function BookList() {
     book.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const indexOfLastBook = currentPage * booksPerPage;
-  const indexOfFirstBook = indexOfLastBook - booksPerPage;
-  const currentBooks = filteredBooks.slice(indexOfFirstBook, indexOfLastBook);
-
   const totalPages = Math.ceil(filteredBooks.length / booksPerPage);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+  };
+
+  const handleBookClick = (bookId) => {
+    const bookIndex = filteredBooks.findIndex((book) => book.id === bookId);
+    const pageNumber = Math.ceil((bookIndex + 1) / booksPerPage);
+    setCurrentPage(pageNumber);
+    onBookClick(bookId);
+  };
+
+  const indexOfLastBook = currentPage * booksPerPage;
+  const indexOfFirstBook = indexOfLastBook - booksPerPage;
+  const currentBooks = filteredBooks.slice(indexOfFirstBook, indexOfLastBook);
+
+  const getPageNumbers = () => {
+    let pages = [];
+    let startPage = Math.max(1, currentPage - 2);
+    let endPage = Math.min(totalPages, currentPage + 2);
+
+    if (endPage - startPage < 4) {
+      if (startPage === 1) {
+        endPage = Math.min(totalPages, 5);
+      } else {
+        startPage = Math.max(1, totalPages - 4);
+      }
+    }
+
+    for (let i = startPage; i <= endPage; i++) {
+      pages.push(i);
+    }
+    return pages;
   };
 
   return (
@@ -79,15 +135,38 @@ function BookList() {
       />
       <BookListUL>
         {currentBooks.map((book) => (
-          <BookItem key={book.id}>{book.name}</BookItem>
+          <BookItem key={book.id}>
+            <button
+              style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
+              onClick={() => handleBookClick(book.id)}
+            >
+              {book.name}
+            </button>
+          </BookItem>
         ))}
       </BookListUL>
       <PaginationContainer>
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNumber) => (
-          <PaginationButton key={pageNumber} onClick={() => handlePageChange(pageNumber)}>
+        <PaginationButton
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+        >
+          Previous
+        </PaginationButton>
+        {getPageNumbers().map((pageNumber) => (
+          <PaginationButton
+            key={pageNumber}
+            onClick={() => handlePageChange(pageNumber)}
+            className={currentPage === pageNumber ? 'active' : ''}
+          >
             {pageNumber}
           </PaginationButton>
         ))}
+        <PaginationButton
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+        >
+          Next
+        </PaginationButton>
       </PaginationContainer>
     </ListContainer>
   );
