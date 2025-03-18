@@ -140,7 +140,7 @@ function BookList({ onBookClick }) {
               style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
               onClick={() => handleBookClick(book.id)}
             >
-              {book.name}
+              {book.id}. {book.name} {/* Display book ID */}
             </button>
           </BookItem>
         ))}

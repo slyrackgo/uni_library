@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const FormContainer = styled.div`
   margin-bottom: 30px;
   padding: 20px;
-  border: 1px solid #eee;
+  border: 1px solid #e9ecef;
   border-radius: 6px;
-  background-color: #f9f9f9;
+  background-color: #f8f9fa;
 `;
 
 const FormGroup = styled.div`
@@ -20,7 +20,7 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  border: 1px solid #ddd;
+  border: 1px solid #ced4da;
   border-radius: 4px;
   padding: 10px;
   width: 100%;
@@ -28,28 +28,26 @@ const Input = styled.input`
   transition: border-color 0.3s ease;
 
   &:focus {
-    border-color: #3498db;
+    border-color: #007bff;
     outline: none;
   }
 `;
 
 const Button = styled.button`
-  background-color: #3498db;
+  background-color: #007bff;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
   font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #2980b9;
+    background-color: #0056b3;
   }
 `;
 
 const ErrorMessage = styled.div`
-  color: #e74c3c;
+  color: #dc3545;
   margin-top: 10px;
 `;
 
