@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+
+
 const ListContainer = styled.div`
   margin-top: 30px;
 `;
 
 const SearchInput = styled.input`
-  margin-bottom: 15px;
+  padding: 14px 18px;
   border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px;
+  border-radius: 8px;
   width: 100%;
+  margin-bottom: 30px;
   box-sizing: border-box;
+  font-size: 1.1em;
   transition: border-color 0.3s ease;
 
   &:focus {
@@ -26,35 +29,40 @@ const BookListUL = styled.ul`
 `;
 
 const BookItem = styled.li`
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #eee;
+`;
 
-  button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    font-size: 1em;
+const BookLink = styled.button`
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  transition: color 0.3s ease;
+
+  &:hover {
     color: #3498db;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 `;
 
 const PaginationContainer = styled.div`
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 `;
 
 const PaginationButton = styled.button`
-  padding: 8px 12px;
+  padding: 12px 18px;
   margin: 0 5px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   background-color: #fff;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #f0f0f0;
@@ -78,25 +86,25 @@ function BookList({ onBookClick }) {
     {
       id: 2,
       name: '48 Laws of Power',
-      description: 'A book about power.',
+      description: 'The 48 Laws of Power outlines a ruthless and amoral guide to acquiring and maintaining power through strategic manipulation and calculated actions.',
       imageUrl: '/BookPicture/2.png', // Corrected path
     },
     {
       id: 3,
       name: 'Data Structures and Algorithms in Java',
-      description: 'A book about Data Structures and Algorithms in Java.',
+      description: 'Data Structures and Algorithms in Java" is a comprehensive guide to implementing and understanding fundamental data structures and algorithmic techniques using the Java programming language.',
       imageUrl: '/BookPicture/3.png', // Corrected path
     },
     {
       id: 4,
       name: 'The short story of tommorow',
-      description: 'A book about the short story of tommorow.',
+      description: 'The Short Story of Tomorrow - explores potential near-future scenarios through concise narratives, examining the impact of emerging technologies and societal shifts on human experience',
       imageUrl: '/BookPicture/4.png', // Corrected path
     },
     {
       id: 6,
       name: 'To Kill a Mockingbird',
-      description: 'A book about To Kill a Mockingbird.',
+      description: 'A novel about racial injustice in the Deep South.',
       imageUrl: '/BookPicture/6.png', // Corrected path
 
     },
@@ -400,6 +408,10 @@ function BookList({ onBookClick }) {
     const bookIndex = filteredBooks.findIndex((book) => book.id === bookId);
     const pageNumber = Math.ceil((bookIndex + 1) / booksPerPage);
     setCurrentPage(pageNumber);
+    window.scrollTo({
+          top: 0,
+          behavior: 'smooth', // Optional: adds smooth scrolling animation
+        })
   };
 
   const indexOfLastBook = currentPage * booksPerPage;
@@ -423,7 +435,9 @@ function BookList({ onBookClick }) {
       pages.push(i);
     }
     return pages;
+
   };
+
 
   return (
     <ListContainer>

@@ -9,11 +9,10 @@ const AppContainer = styled.div`
   max-width: 1200px;
   margin: 40px auto;
   padding: 30px;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0 , 0, 0, 0.1);
+  border-radius: 12px;
 `;
-
 const Header = styled.div`
   display: flex;
   flex-direction: column;
