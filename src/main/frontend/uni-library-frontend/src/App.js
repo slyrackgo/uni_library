@@ -7,11 +7,12 @@ import GlobalStyle from './GlobalStyles';
 
 const AppContainer = styled.div`
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 10px auto;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 20px rgba(0 , 0, 0, 0.1);
   border-radius: 12px;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(245, 245, 245, 0.15)); /* Subtle gradient */
 `;
 const Header = styled.div`
   display: flex;
@@ -40,6 +41,7 @@ const LeftSection = styled.div`
 
 const RightSection = styled.div`
   width: 60%;
+
   box-sizing: border-box;
   display: flex;
 `;
@@ -63,9 +65,11 @@ const BookInfo = styled.div`
 `;
 
 const DownloadSection = styled.div`
-  width: 30%;
-  box-sizing: border-box;
+     width: 30%;
+
+
 `;
+
 
 function App() {
   const [selectedBookId, setSelectedBookId] = useState('');

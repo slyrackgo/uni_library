@@ -93,7 +93,9 @@ function BookDownload({ selectedBookId }) {
     <FormContainer>
       <h2>Download Book</h2>
       <FormGroup>
-        <Label htmlFor="downloadProductId">Product ID:</Label>
+        <Label htmlFor="downloadProductName">Product Id:</Label>
+
+
         <Input
           type="text"
           id="downloadProductId"
