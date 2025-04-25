@@ -17,10 +17,14 @@ The system is fully functional through API endpoints that can be tested and inte
 * **Download:**
     * Use the `/product/{productId}/download` endpoint to download a book file.
     * Send a `GET` request.
-![postman](https://github.com/user-attachments/assets/3a8d87c1-7051-4276-966b-ddb3e08bf742)
 
 ## Technologies
 
+
 * Spring Boot
 * Java
+* React.js
 * MySQL
+
+
+![website](https://github.com/user-attachments/assets/33b837b0-8579-4a05-bdc1-c973b2ada347)
