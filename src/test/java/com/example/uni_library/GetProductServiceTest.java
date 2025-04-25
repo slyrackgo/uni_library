@@ -20,7 +20,7 @@ import static org.mockito.Mockito.*;
 
 public class GetProductServiceTest {
     @Mock
-    private ProductRepository productRepository;
+    private com.example.uni_library.ProductRepository productRepository;
 
     @InjectMocks
     private GetProductService getProductService;
