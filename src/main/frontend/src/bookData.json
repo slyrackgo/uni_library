@@ -1,0 +1,308 @@
+[   
+    {
+        "id": 1,
+        "name": "Crime and punishment",
+        "description": "Raskolnikov, an impoverished student, commits a murder he believes justified, then descends into a psychological torment that forces him to confront his guilt and seek redemption.",
+        "imageUrl": "/BookPicture/1.png"
+    },
+    {
+        "id": 2,
+        "name": "48 Laws of Power",
+        "description": "The 48 Laws of Power outlines a ruthless and amoral guide to acquiring and maintaining power through strategic manipulation and calculated actions.",
+        "imageUrl": "/BookPicture/2.png"
+    },
+    {
+      "id": 3,
+      "name": "Data Structures and Algorithms in Java",
+      "description": "\"Data Structures and Algorithms in Java\" is a comprehensive guide to implementing and understanding fundamental data structures and algorithmic techniques using the Java programming language.",
+      "imageUrl": "/BookPicture/3.png"
+    },
+    {
+      "id": 4,
+      "name": "The short story of tommorow",
+      "description": "The Short Story of Tomorrow - explores potential near-future scenarios through concise narratives, examining the impact of emerging technologies and societal shifts on human experience",
+      "imageUrl": "/BookPicture/4.png"
+    },
+    {
+      "id": 6,
+      "name": "To Kill a Mockingbird",
+      "description": "A novel about racial injustice in the Deep South.",
+      "imageUrl": "/BookPicture/6.png"
+    },
+    {
+      "id": 7,
+      "name": "1984",
+      "description": "A dystopian novel about totalitarianism and surveillance.",
+      "imageUrl": "/BookPicture/7.png"
+    },
+    {
+      "id": 8,
+      "name": "Pride and Prejudice",
+      "description": "A classic romance novel set in Regency England.",
+      "imageUrl": "/BookPicture/8.png"
+    },
+    {
+      "id": 9,
+      "name": "The Great Gatsby",
+      "description": "A tragic story of wealth and love in the 1920s.",
+      "imageUrl": "/BookPicture/9.png"
+    },
+    {
+      "id": 10,
+      "name": "Moby Dick",
+      "description": "A tale of obsession and revenge on the high seas.",
+      "imageUrl": "/BookPicture/11.png"
+    },
+    {
+      "id": 11,
+      "name": "War and Peace",
+      "description": "A novel about a whaling voyage and a captain's obsession.",
+      "imageUrl": "/BookPicture/21.png"
+    },
+    {
+      "id": 12,
+      "name": "The Catcher in the Rye",
+      "description": "A story about teenage alienation and angst.",
+      "imageUrl": "/BookPicture/12.png"
+    },
+    {
+      "id": 13,
+      "name": "Brave New World",
+      "description": "A dystopian novel about a future society controlled by technology.",
+      "imageUrl": "/BookPicture/13.png"
+    },
+    {
+      "id": 14,
+      "name": "Wuthering Heights",
+      "description": "A gothic novel of love and revenge.",
+      "imageUrl": "/BookPicture/14.png"
+    },
+    {
+      "id": 15,
+      "name": "Jane Eyre",
+      "description": "A story of love, morality, and resilience.",
+      "imageUrl": "/BookPicture/15.png"
+    },
+    {
+      "id": 16,
+      "name": "Frankenstein",
+      "description": "A gothic tale of science and monstrosity.",
+      "imageUrl": "/BookPicture/16.png"
+    },
+    {
+      "id": 17,
+      "name": "The Odyssey",
+      "description": "An epic poem about the journey of Odysseus.",
+      "imageUrl": "/BookPicture/17.png"
+    },
+    {
+      "id": 18,
+      "name": "The Iliad",
+      "description": "A classic epic about the Trojan War.",
+      "imageUrl": "/BookPicture/18.png"
+    },
+    {
+      "id": 19,
+      "name": "Dracula",
+      "description": "A gothic horror novel about the legendary vampire.",
+      "imageUrl": "/BookPicture/19.png"
+    },
+    {
+      "id": 20,
+      "name": "The Hobbit",
+      "description": "A fantasy adventure about Bilbo Baggins.",
+      "imageUrl": "/BookPicture/20.png"
+    },
+    {
+      "id": 21,
+      "name": "Lord of the Rings",
+      "description": "An epic fantasy trilogy about the One Ring.",
+      "imageUrl": "/BookPicture/21.png"
+    },
+    {
+      "id": 22,
+      "name": "A Tale of Two Cities",
+      "description": "A historical novel set during the French Revolution.",
+      "imageUrl": "/BookPicture/22.png"
+    },
+    {
+        "id": 23,
+        "name": "The Scarlet Letter",
+        "description": "A novel about a woman ostracized for adultery in Puritan New England.",
+        "imageUrl": "/BookPicture/23.png"
+      },
+      {
+        "id": 24,
+        "name": "Anna Karenina",
+        "description": "A tragic love story set in Russian high society.",
+        "imageUrl": "/BookPicture/24.png"
+      },
+      {
+        "id": 25,
+        "name": "Les Misérables",
+        "description": "A novel about redemption and revolution in 19th-century France.",
+        "imageUrl": "/BookPicture/25.png"
+      },
+      {
+        "id": 26,
+        "name": "Don Quixote",
+        "description": "A satirical novel about a man who imagines himself a knight.",
+        "imageUrl": "/BookPicture/26.png"
+      },
+      {
+        "id": 27,
+        "name": "Fahrenheit 451",
+        "description": "A dystopian novel about a future society where books are banned.",
+        "imageUrl": "/BookPicture/27.png"
+      },
+      {
+        "id": 28,
+        "name": "The Picture of Dorian Gray",
+        "description": "A novel about a man who sells his soul for eternal youth and beauty.",
+        "imageUrl": "/BookPicture/28.png"
+      },
+      {
+        "id": 29,
+        "name": "The Brothers Karamazov",
+        "description": "A philosophical novel about faith, morality, and family.",
+        "imageUrl": "/BookPicture/29.png"
+      },
+      {
+        "id": 30,
+        "name": "Alice in Wonderland",
+        "description": "A novel about a girl who falls into a fantasy world.",
+        "imageUrl": "/BookPicture/30.png"
+      },
+      {
+        "id": 31,
+        "name": "The Count of Monte Cristo",
+        "description": "A novel about revenge and betrayal.",
+        "imageUrl": "/BookPicture/31.png"
+      },
+      {
+        "id": 32,
+        "name": "The Grapes of Wrath",
+        "description": "A novel about a family of migrant workers during the Great Depression.",
+        "imageUrl": "/BookPicture/32.png"
+      },
+      {
+        "id": 33,
+        "name": "One Hundred Years of Solitude",
+        "description": "A multi-generational story of the Buendía family in Macondo.",
+        "imageUrl": "/BookPicture/33.png"
+      },
+      {
+        "id": 34,
+        "name": "The Alchemist",
+        "description": "A novel about a shepherd boy who follows his dreams.",
+        "imageUrl": "/BookPicture/34.png"
+      },
+      {
+        "id": 35,
+        "name": "The Old Man and the Sea",
+        "description": "A novella about an aging fisherman's struggle with a giant marlin.",
+        "imageUrl": "/BookPicture/35.png"
+      },
+      {
+        "id": 36,
+        "name": "The Sun Also Rises",
+        "description": "A novel about a group of American expatriates in post-World War I Europe.",
+        "imageUrl": "/BookPicture/36.png"
+      },
+      {
+        "id": 37,
+        "name": "Of Mice and Men",
+        "description": "A novella about two migrant workers in California during the Great Depression.",
+        "imageUrl": "/BookPicture/37.png"
+      },
+      {
+        "id": 38,
+        "name": "Catch-22",
+        "description": "A satirical novel about the absurdity of war.",
+        "imageUrl": "/BookPicture/38.png"
+      },
+      {
+        "id": 39,
+        "name": "Slaughterhouse-Five",
+        "description": "A science fiction novel about a soldier's experiences in World War II and time travel.",
+        "imageUrl": "/BookPicture/39.png"
+      },
+        {
+        "id": 40,
+        "name": "Beloved",
+        "description": "A novel about the legacy of slavery and its impact on a family.",
+        "imageUrl": "/BookPicture/40.png"
+      },
+      {
+        "id": 41,
+        "name": "The Handmaid’s Tale",
+        "description": "A dystopian novel about a future society where women are subjugated.",
+        "imageUrl": "/BookPicture/41.png"
+      },
+      {
+          "id": 42,
+          "name": "Invisible Man",
+          "description": "A novel about an African American man's search for identity in a racially charged society.",
+          "imageUrl": "/BookPicture/42.png"
+      },
+      {
+        "id": 43,
+        "name": "The Road",
+        "description": "A post-apocalyptic novel about a father and son trying to survive.",
+        "imageUrl": "/BookPicture/43.png"
+      },
+      {
+        "id": 44,
+        "name": "The Stranger",
+        "description": "A novel about a man who is indifferent to the world around him.",
+        "imageUrl": "/BookPicture/44.png"
+      },
+      {
+        "id": 45,
+        "name": "Gone with the Wind",
+        "description": "A novel set in the American South during the Civil War and Reconstruction era.",
+        "imageUrl": "/BookPicture/45.png"
+      },
+      {
+        "id": 46,
+        "name": "The Wind in the Willows",
+        "description": "A children's novel about anthropomorphic animals in the English countryside.",
+        "imageUrl": "/BookPicture/46.png"
+      },
+      {
+        "id": 47,
+        "name": "The Little Prince",
+        "description": "A novella about a young prince who travels the universe.",
+        "imageUrl": "/BookPicture/47.png"
+      },
+      {
+        "id": 48,
+         "name": "Dune",
+          "description": "A science fiction novel set on the desert planet Arrakis.",
+          "imageUrl": "/BookPicture/48.png"
+      },
+      {
+        "id": 49,
+        "name": "Foundation",
+        "description": "A science fiction series about the fall and rise of a galactic empire.",
+        "imageUrl": "/BookPicture/49.png"
+      },
+      {
+        "id": 50,
+        "name": "The Hitchhiker’s Guide to the Galaxy",
+        "description": "A science fiction comedy series about the adventures of an Englishman after Earth's destruction.",
+        "imageUrl": "/BookPicture/50.png"
+      },
+      {
+        "id": 51,
+        "name": "A Clockwork Orange",
+        "description": "A dystopian satirical black comedy novel.",
+        "imageUrl": "/BookPicture/51.png"
+      },
+      {
+        "id": 52,
+        "name": "The Shining",
+        "description": "A horror novel about a family who spends the winter at an isolated hotel.",
+        "imageUrl": "/BookPicture/52.png"
+      }
+  ]
